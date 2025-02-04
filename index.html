@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Session Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sports Session Management</h1>
+    <nav>
+      <button id="login-btn">Log In</button>
+      <button id="signup-btn">Sign Up</button>
+      <button id="logout-btn" style="display: none;">Log Out</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="auth-section" class="hidden">
+      <h2 id="auth-title">Log In</h2>
+      <form id="auth-form">
+        <input type="text" id="name-field" placeholder="Name (for Sign Up)" class="hidden">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <h2>Dashboard</h2>
+      <div id="actions">
+        <button id="create-sport-btn">Create Sport</button>
+        <button id="create-session-btn">Create Session</button>
+      </div>
+      <div id="content">
+        <h3>Available Sports</h3>
+        <ul id="sports-list"></ul>
+        <h3>Available Sessions</h3>
+        <ul id="sessions-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
